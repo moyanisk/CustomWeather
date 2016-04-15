@@ -21,8 +21,6 @@ public class App extends Application {
         super.onCreate();
         sContext = getApplicationContext();
         init();
-
-
         LogUtils.v(TAG, "------------------");
         LogUtils.v(TAG, "program app create!");
     }
@@ -30,8 +28,6 @@ public class App extends Application {
     private void init() {
         RequestManager.init(this);
         LogUtils.setLogLevel(LogUtils.VERBOSE);
-
-        //Init bugly
         CrashReport.initCrashReport(getApplicationContext(), "900025941", false);
     }
 
