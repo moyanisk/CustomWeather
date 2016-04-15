@@ -8,6 +8,8 @@ public class MainActivity extends AppBaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        CrashReport.testJavaCrash();
     }
 
     @Override

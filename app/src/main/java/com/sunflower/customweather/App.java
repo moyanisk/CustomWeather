@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.sunflower.androidlib.net.RequestManager;
 import com.sunflower.androidlib.utils.LogUtils;
+import com.tencent.bugly.crashreport.CrashReport;
 
 /**
  * Created by yunlala-web on 2016/4/14.
@@ -20,6 +21,8 @@ public class App extends Application {
         super.onCreate();
         sContext = getApplicationContext();
         init();
+
+
         LogUtils.v(TAG, "------------------");
         LogUtils.v(TAG, "program app create!");
     }
@@ -27,6 +30,9 @@ public class App extends Application {
     private void init() {
         RequestManager.init(this);
         LogUtils.setLogLevel(LogUtils.VERBOSE);
+
+        //Init bugly
+        CrashReport.initCrashReport(getApplicationContext(), "900025941", false);
     }
 
 
