@@ -20,8 +20,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         LogUtils.d(TAG, "onCreate! -------");
-        initVariables();
         initViews(savedInstanceState);
+        initVariables();
         loadData();
         super.onCreate(savedInstanceState);
     }

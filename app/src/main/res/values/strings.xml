@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CustomWeather</string>
+    <string name="title_activity_location_manager">LocationManagerActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
 </resources>

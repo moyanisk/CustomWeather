@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.sunflower.customweather.activity.MainActivity">
+    tools:context="com.sunflower.customweather.activity.LocationManagerActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,12 +22,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <ListView
-        android:id="@+id/lvItems"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <!--<include layout="@layout/content_location_manager"/>-->
+    <include layout="@layout/content_location_manager"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
